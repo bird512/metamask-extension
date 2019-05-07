@@ -753,7 +753,7 @@ describe('MetaMaskController', function () {
 
     it('sets up phishing stream for untrusted communication ', async () => {
       await metamaskController.phishingController.updatePhishingLists()
-  
+ 
       const { promise, resolve } = deferredPromise()
 
       streamTest = createThoughStream((chunk, enc, cb) => {
